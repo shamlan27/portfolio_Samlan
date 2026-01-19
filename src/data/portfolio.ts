@@ -3,7 +3,7 @@ export const PORTFOLIO_DATA = {
         name: "SAMLAN",
         role: "BSc (Hons) Computer Science Undergraduate",
         summary:
-            "Software Engineering undergraduate with hands-on experience in live full-stack development and real-world internship exposure. Strong knowledge of RESTful APIs, cloud platforms, caching, security, and developer-focused systems. Passionate about tech evangelism, developer relations, API platforms, and community engagement. Experienced in documentation, testing, onboarding users, and presenting technical solutions clearly.",
+            "Software Engineering undergraduate with hands-on experience in live full-stack development and real-world internship exposure. Strong knowledge of RESTful APIs, cloud platforms, caching, security, and developer-focused systems. Passionate about tech evangelism, developer relations, API platforms, and community engagement. Experienced in documentation, testing, onboarding users, and presenting technical solutions clearly. Additionally, an AI enthusiast with a keen interest in Data Science and a strong drive to learn and explore emerging technologies in these domains.",
         email: "shamlanm08@gmail.com",
         phone: "+94 75 044 0313",
         linkedin: "www.linkedin.com/in/issadeen-shamlan",
