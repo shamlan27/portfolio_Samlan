@@ -101,7 +101,7 @@ export const PORTFOLIO_DATA = {
             title: "Photography Website (University Project)",
             link: "https://github.com/shamlan27/Photoraphy_website",
             description: "A university project showcasing photography portfolio features.",
-            techStack: ["HTML", "CSS", "JavaScript"],
+            techStack: ["HTML", "CSS", "JavaScript", "PHP"],
             points: [
                 "Designed and developed a responsive photography portfolio interface",
                 "Implemented image gallery and display features",
