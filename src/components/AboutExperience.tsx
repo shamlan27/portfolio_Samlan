@@ -14,11 +14,11 @@ export const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="text-3xl md:text-4xl font-bold mb-8 flex items-center gap-3">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 flex items-center justify-center md:justify-start gap-3">
                     <span className="w-2 h-8 bg-primary rounded-full" />
                     About Me
                 </h2>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl text-center md:text-left mx-auto md:mx-0">
                     {PORTFOLIO_DATA.personal.summary}
                 </p>
             </motion.div>
@@ -35,7 +35,7 @@ export const Experience = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-3">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center justify-center md:justify-start gap-3">
                     <Briefcase className="w-8 h-8 text-primary" />
                     Experience
                 </h2>
@@ -79,7 +79,7 @@ export const Education = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-3">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center justify-center md:justify-start gap-3">
                     <GraduationCap className="w-8 h-8 text-primary" />
                     Education
                 </h2>

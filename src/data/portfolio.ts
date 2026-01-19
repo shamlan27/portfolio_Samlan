@@ -98,6 +98,18 @@ export const PORTFOLIO_DATA = {
             ],
         },
         {
+            title: "Advance Step - Smart NFC Card & E-commerce (Not Live)",
+            link: "https://github.com/shamlan27/website",
+            description: "Smart NFC Card solution with customizable features, admin panel for order management, and complete e-commerce functionality.",
+            techStack: ["React", "Next.js", "Node.js", "MongoDB", "Admin Panel"],
+            points: [
+                "Developed a complete e-commerce website for Smart NFC cards",
+                "Built an admin panel for managing orders and customizations",
+                "Implemented customizable card features for users",
+                "Integrated mobile-responsive design for better user experience",
+            ],
+        },
+        {
             title: "Photography Website (University Project)",
             link: "https://github.com/shamlan27/Photoraphy_website",
             description: "A university project showcasing photography portfolio features.",

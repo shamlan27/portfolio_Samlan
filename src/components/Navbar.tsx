@@ -46,7 +46,7 @@ export const Navbar = () => {
                                 className="object-cover"
                             />
                         </div>
-                        <span className="text-xl font-bold tracking-tighter hidden sm:block">
+                        <span className="text-xl font-bold tracking-tighter block">
                             {PORTFOLIO_DATA.personal.name}
                         </span>
                     </Link>
