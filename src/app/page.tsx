@@ -3,6 +3,7 @@ import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Projects, Skills } from "@/components/SkillsProjects";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <WhatsAppButton />
     </main>
   );
 }
