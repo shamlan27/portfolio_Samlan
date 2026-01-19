@@ -51,6 +51,13 @@ export const Hero = () => {
                     >
                         View Live Project
                     </Link>
+                    <a
+                        href="/resume.pdf"
+                        download="Samlan_Resume.pdf"
+                        className="inline-flex items-center h-12 px-6 rounded-lg border border-border bg-secondary/50 text-white font-medium hover:bg-secondary/80 transition-colors"
+                    >
+                        Download Resume
+                    </a>
                 </div>
             </motion.div>
         </section>
