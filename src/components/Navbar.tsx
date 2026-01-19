@@ -71,15 +71,16 @@ export const Navbar = () => {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
+                            key="mobile-menu"
                             initial={{ opacity: 0, x: "100%" }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: "100%" }}
                             transition={{ type: "tween" }}
-                            className="fixed inset-0 bg-background z-50 flex flex-col items-center justify-center gap-8 md:hidden"
+                            className="fixed inset-0 bg-background z-[100] flex flex-col items-center justify-center gap-8 md:hidden"
                         >
                             <button
                                 onClick={() => setIsOpen(false)}
-                                className="absolute top-6 right-6 p-2 text-white"
+                                className="absolute top-6 right-6 p-2 text-white hover:text-primary transition-colors"
                             >
                                 <X className="w-6 h-6" />
                             </button>
