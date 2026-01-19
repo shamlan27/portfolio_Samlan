@@ -13,7 +13,7 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl"
+                className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl flex flex-col items-center text-center md:items-start md:text-left"
             >
                 {/* Background Glow Effect */}
                 {/* Background Glow Effect */}
@@ -30,7 +30,7 @@ export const Hero = () => {
                     {PORTFOLIO_DATA.personal.role}
                 </p>
 
-                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground pt-2">
+                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground pt-2 justify-center md:justify-start">
                     <div className="flex items-center gap-2">
                         <Mail className="w-4 h-4" />
                         <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="hover:text-primary transition-colors">{PORTFOLIO_DATA.personal.email}</a>
@@ -41,7 +41,7 @@ export const Hero = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap gap-4 pt-6">
+                <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
                     <Link
                         href={`https://${PORTFOLIO_DATA.personal.linkedin}`}
                         target="_blank"
