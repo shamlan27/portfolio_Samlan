@@ -113,12 +113,37 @@ export const PORTFOLIO_DATA = {
         {
             title: "Photography Website (University Project)",
             link: "https://github.com/shamlan27/Photoraphy_website",
+            video: "https://shorturl.at/w9Rri",
             description: "A university project showcasing photography portfolio features.",
             techStack: ["HTML", "CSS", "JavaScript", "PHP"],
             points: [
                 "Designed and developed a responsive photography portfolio interface",
                 "Implemented image gallery and display features",
                 "University coursework project focusing on frontend development principles",
+            ],
+        },
+        {
+            title: "DO Media - Responsive Website",
+            video: "https://lnkd.in/gXSSPzQb",
+            description: "Developed a responsive multi-page website for a digital media brand using HTML5, CSS3, and JavaScript.",
+            techStack: ["HTML5", "CSS3", "JavaScript", "Animation"],
+            points: [
+                "Developed a modern multi-page website with a responsive layout",
+                "Implemented a custom loading screen with brand logo and animated spinner",
+                "Created a 'Get Started' form page with validation and feedback",
+                "Focused on clean UI/UX design and mobile responsiveness",
+            ],
+        },
+        {
+            title: "E-commerce Flutter App (Learning Mobile Application)",
+            video: "https://shorturl.at/GwVqw",
+            description: "A cross-platform mobile application built using Dart and the Flutter framework, showcasing UI/UX skills.",
+            techStack: ["Flutter", "Dart", "State Management", "Mobile UI"],
+            points: [
+                "Built a cross-platform mobile application using Flutter and Dart",
+                "Implemented complex screen structure and navigation",
+                "Integrated state management for interactive elements",
+                "Demonstrated frontend design skills and responsiveness",
             ],
         },
     ],

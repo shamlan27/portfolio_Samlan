@@ -3,7 +3,7 @@
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
-import { ExternalLink, Code2, Server, Database, Globe } from "lucide-react";
+import { ExternalLink, Code2, Server, Database, Globe, Video } from "lucide-react";
 import Link from "next/link";
 
 
@@ -70,6 +70,12 @@ export const Projects = () => {
                                     <Link href={project.link} target="_blank" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-white mb-6">
                                         <ExternalLink className="w-4 h-4" />
                                         {project.link}
+                                    </Link>
+                                )}
+                                {project.video && (
+                                    <Link href={project.video} target="_blank" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-white mb-6 mr-4">
+                                        <Video className="w-4 h-4" />
+                                        Watch Video
                                     </Link>
                                 )}
                                 <p className="text-muted-foreground mb-6 line-clamp-3">{project.description}</p>
