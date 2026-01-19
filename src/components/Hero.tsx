@@ -13,8 +13,12 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="space-y-6"
+                className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl"
             >
+                {/* Background Glow Effect */}
+                <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
+                <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
+
                 <span className="text-primary font-medium tracking-wider text-sm md:text-base uppercase">
                     Full Stack Developer
                 </span>
