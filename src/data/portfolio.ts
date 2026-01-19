@@ -97,6 +97,17 @@ export const PORTFOLIO_DATA = {
                 "Prepared technical documentation and UML diagrams",
             ],
         },
+        {
+            title: "Photography Website (University Project)",
+            link: "https://github.com/shamlan27/Photoraphy_website",
+            description: "A university project showcasing photography portfolio features.",
+            techStack: ["HTML", "CSS", "JavaScript"],
+            points: [
+                "Designed and developed a responsive photography portfolio interface",
+                "Implemented image gallery and display features",
+                "University coursework project focusing on frontend development principles",
+            ],
+        },
     ],
     strengths: [
         "Developer onboarding & API usage support",
