@@ -57,6 +57,7 @@ export const PORTFOLIO_DATA = {
             "GitHub",
             "Postman",
             "Cloudinary",
+            "Agile Methodology",
             "WordPress (https://finovationtech.com)",
         ],
     },
