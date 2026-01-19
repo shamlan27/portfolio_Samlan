@@ -48,7 +48,7 @@ export const Navbar = () => {
                                 className="object-cover"
                             />
                         </div>
-                        <span className="text-xl font-bold tracking-tighter block drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">
+                        <span className="text-xl font-bold tracking-tighter block drop-shadow-[0_0_10px_rgba(168,85,247,0.5)] hover:text-primary transition-colors">
                             {PORTFOLIO_DATA.personal.name}
                         </span>
                     </Link>
