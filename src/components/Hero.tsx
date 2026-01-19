@@ -20,7 +20,7 @@ export const Hero = () => {
                 <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
 
                 <span className="text-primary font-medium tracking-wider text-sm md:text-base uppercase">
-                    Full Stack Developer
+                    Software Engineer
                 </span>
                 <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-white">
                     Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">{PORTFOLIO_DATA.personal.name}</span>
