@@ -48,6 +48,42 @@ export const Skills = () => {
     );
 };
 
+export const TechMarquee = () => {
+    const allSkills = [
+        ...PORTFOLIO_DATA.skills.frontend.map(s => ({ name: s, icon: Globe })),
+        ...PORTFOLIO_DATA.skills.backend.map(s => ({ name: s, icon: Server })),
+        ...PORTFOLIO_DATA.skills.database.map(s => ({ name: s, icon: Database })),
+        ...PORTFOLIO_DATA.skills.cloud.map(s => ({ name: s, icon: Database })),
+        ...PORTFOLIO_DATA.skills.tools.map(s => ({ name: s, icon: Code2 })),
+    ];
+
+    return (
+        <div className="w-full overflow-hidden bg-background py-10 relative">
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+
+            <motion.div
+                className="flex gap-16 w-max"
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{
+                    duration: 30,
+                    ease: "linear",
+                    repeat: Infinity
+                }}
+            >
+                {[...allSkills, ...allSkills].map((skill, idx) => (
+                    <div key={idx} className="flex items-center gap-3 opacity-50 hover:opacity-100 transition-opacity">
+                        <skill.icon className="w-8 h-8 text-primary" />
+                        <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
+                            {skill.name}
+                        </span>
+                    </div>
+                ))}
+            </motion.div>
+        </div>
+    );
+};
+
 export const Projects = () => {
     return (
         <Section id="projects">

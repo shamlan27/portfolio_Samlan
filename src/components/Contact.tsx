@@ -47,6 +47,9 @@ export const Contact = () => {
                             <Link href={`https://${PORTFOLIO_DATA.personal.linkedin}`} target="_blank" className="text-muted-foreground hover:text-white transition-colors">
                                 LinkedIn
                             </Link>
+                            <Link href={PORTFOLIO_DATA.personal.github} target="_blank" className="text-muted-foreground hover:text-white transition-colors">
+                                GitHub
+                            </Link>
                             <Link href={PORTFOLIO_DATA.personal.liveProject} target="_blank" className="text-muted-foreground hover:text-white transition-colors">
                                 Live Project
                             </Link>

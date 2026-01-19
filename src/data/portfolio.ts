@@ -7,6 +7,7 @@ export const PORTFOLIO_DATA = {
         email: "shamlanm08@gmail.com",
         phone: "+94 75 044 0313",
         linkedin: "www.linkedin.com/in/issadeen-shamlan",
+        github: "https://github.com/shamlan27",
         location: "Kingston University (ESOFT Metro Campus), Sri Lanka",
         liveProject: "https://get-offer.live",
     },
