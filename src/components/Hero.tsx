@@ -16,8 +16,9 @@ export const Hero = () => {
                 className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl"
             >
                 {/* Background Glow Effect */}
-                <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
-                <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
+                {/* Background Glow Effect */}
+                <div className="absolute -top-12 -right-12 md:-top-24 md:-right-24 w-48 h-48 md:w-64 md:h-64 bg-primary/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
+                <div className="absolute -bottom-12 -left-12 md:-bottom-24 md:-left-24 w-48 h-48 md:w-64 md:h-64 bg-purple-500/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
 
                 <span className="text-primary font-medium tracking-wider text-sm md:text-base uppercase">
                     Software Engineer
