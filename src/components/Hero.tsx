@@ -30,36 +30,37 @@ export const Hero = () => {
                     {PORTFOLIO_DATA.personal.role}
                 </p>
 
-                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground pt-2 justify-center md:justify-start">
+                <div className="flex flex-col md:flex-row gap-4 text-sm text-muted-foreground pt-2 justify-center md:justify-start items-center md:items-start">
                     <div className="flex items-center gap-2">
                         <Mail className="w-4 h-4" />
                         <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="hover:text-primary transition-colors">{PORTFOLIO_DATA.personal.email}</a>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
+                    <div className="hidden md:block w-1.5 h-1.5 bg-primary/50 dashed-circle" />
+                    <div className="flex items-center gap-2 text-center">
+                        <MapPin className="w-4 h-4 shrink-0" />
                         <span>{PORTFOLIO_DATA.personal.location}</span>
                     </div>
                 </div>
 
-                <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
+                <div className="flex flex-col sm:flex-row gap-4 pt-6 w-full justify-center md:justify-start items-center">
                     <Link
                         href={`https://${PORTFOLIO_DATA.personal.linkedin}`}
                         target="_blank"
-                        className="p-3 bg-secondary rounded-full hover:bg-primary/20 hover:text-primary transition-colors"
+                        className="p-3 bg-secondary rounded-full hover:bg-primary/20 hover:text-primary transition-colors order-3 sm:order-1"
                     >
                         <Linkedin className="w-6 h-6" />
                     </Link>
                     <Link
                         href={PORTFOLIO_DATA.personal.liveProject}
                         target="_blank"
-                        className="inline-flex items-center h-12 px-6 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-colors"
+                        className="inline-flex items-center h-12 px-6 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-colors w-full sm:w-auto justify-center order-1 sm:order-2"
                     >
                         View Live Project
                     </Link>
                     <a
                         href="/resume.pdf"
                         download="Samlan_Resume.pdf"
-                        className="inline-flex items-center h-12 px-6 rounded-lg border border-border bg-secondary/50 text-white font-medium hover:bg-secondary/80 transition-colors"
+                        className="inline-flex items-center h-12 px-6 rounded-lg border border-border bg-secondary/50 text-white font-medium hover:bg-secondary/80 transition-colors w-full sm:w-auto justify-center order-2 sm:order-3"
                     >
                         Download Resume
                     </a>
