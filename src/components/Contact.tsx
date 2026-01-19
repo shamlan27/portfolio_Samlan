@@ -17,17 +17,17 @@ export const Contact = () => {
                     transition={{ duration: 0.5 }}
                     className="grid md:grid-cols-2 gap-12 mb-20 text-center md:text-left"
                 >
-                    <div>
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let&apos;s Connect</h2>
-                        <p className="text-xl text-muted-foreground mb-8">
+                    <div className="flex flex-col items-center md:items-start">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white text-center md:text-left">Let&apos;s Connect</h2>
+                        <p className="text-xl text-muted-foreground mb-8 text-center md:text-left">
                             {PORTFOLIO_DATA.availability}
                         </p>
-                        <div className="flex flex-col gap-4 items-center md:items-start">
-                            <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="flex items-center gap-4 text-white hover:text-primary transition-colors text-lg">
+                        <div className="flex flex-col gap-4 items-center md:items-start w-full">
+                            <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="flex items-center justify-center md:justify-start gap-4 text-white hover:text-primary transition-colors text-lg w-full md:w-auto">
                                 <Mail className="w-6 h-6" />
                                 {PORTFOLIO_DATA.personal.email}
                             </a>
-                            <div className="flex items-center gap-4 text-muted-foreground text-lg">
+                            <div className="flex items-center justify-center md:justify-start gap-4 text-muted-foreground text-lg w-full md:w-auto">
                                 <Phone className="w-6 h-6" />
                                 {PORTFOLIO_DATA.personal.phone}
                             </div>
@@ -35,7 +35,7 @@ export const Contact = () => {
                     </div>
 
                     <div className="flex flex-col justify-between items-center md:items-start">
-                        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <div className="flex flex-wrap gap-3 justify-center md:justify-start w-full">
                             {PORTFOLIO_DATA.interests.map((interest, idx) => (
                                 <span key={idx} className="px-4 py-2 rounded-full border border-white/10 text-sm hover:border-primary/50 transition-colors cursor-default">
                                     {interest}
@@ -43,7 +43,7 @@ export const Contact = () => {
                             ))}
                         </div>
 
-                        <div className="flex gap-6 mt-10 md:mt-0 justify-center md:justify-start">
+                        <div className="flex gap-6 mt-10 md:mt-0 justify-center md:justify-start w-full">
                             <Link href={`https://${PORTFOLIO_DATA.personal.linkedin}`} target="_blank" className="text-muted-foreground hover:text-white transition-colors">
                                 LinkedIn
                             </Link>
@@ -54,9 +54,9 @@ export const Contact = () => {
                     </div>
                 </motion.div>
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground text-center">
                     <p>© {new Date().getFullYear()} {PORTFOLIO_DATA.personal.name}. All rights reserved.</p>
-                    <p className="flex items-center gap-1">
+                    <p className="flex items-center justify-center gap-1">
                         Built with Next.js & Tailwind <ArrowUpRight className="w-4 h-4" />
                     </p>
                 </div>

@@ -13,9 +13,8 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl flex flex-col items-center text-center md:items-start md:text-left"
+                className="space-y-6 relative z-10 p-8 md:p-12 rounded-3xl bg-secondary/10 backdrop-blur-xl border border-white/10 shadow-2xl flex flex-col items-center text-center md:items-start md:text-left overflow-hidden"
             >
-                {/* Background Glow Effect */}
                 {/* Background Glow Effect */}
                 <div className="absolute -top-12 -right-12 md:-top-24 md:-right-24 w-48 h-48 md:w-64 md:h-64 bg-primary/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
                 <div className="absolute -bottom-12 -left-12 md:-bottom-24 md:-left-24 w-48 h-48 md:w-64 md:h-64 bg-purple-500/30 rounded-full blur-3xl opacity-50 pointer-events-none" />
@@ -26,17 +25,17 @@ export const Hero = () => {
                 <h1 className="text-3xl md:text-7xl font-bold tracking-tight text-white">
                     Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">{PORTFOLIO_DATA.personal.name}</span>
                 </h1>
-                <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl">
+                <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl px-2">
                     {PORTFOLIO_DATA.personal.role}
                 </p>
 
-                <div className="flex flex-col md:flex-row gap-4 text-sm text-muted-foreground pt-2 justify-center md:justify-start items-center md:items-start">
+                <div className="flex flex-col md:flex-row gap-4 text-sm text-muted-foreground pt-2 justify-center md:justify-start items-center md:items-start w-full">
                     <div className="flex items-center gap-2">
                         <Mail className="w-4 h-4" />
                         <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="hover:text-primary transition-colors">{PORTFOLIO_DATA.personal.email}</a>
                     </div>
                     <div className="hidden md:block w-1.5 h-1.5 bg-primary/50 dashed-circle" />
-                    <div className="flex items-center gap-2 text-center">
+                    <div className="flex items-center justify-center gap-2 text-center w-full md:w-auto">
                         <MapPin className="w-4 h-4 shrink-0" />
                         <span>{PORTFOLIO_DATA.personal.location}</span>
                     </div>
