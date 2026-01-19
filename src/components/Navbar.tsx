@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 
 export const Navbar = () => {
@@ -35,8 +36,18 @@ export const Navbar = () => {
             )}
         >
             <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
-                <Link href="#" className="text-xl font-bold tracking-tighter hover:text-primary transition-colors">
-                    {PORTFOLIO_DATA.personal.name}
+                <Link href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <div className="relative w-10 h-10 overflow-hidden rounded-full border border-white/10">
+                        <Image
+                            src="/logo.png"
+                            alt={PORTFOLIO_DATA.personal.name}
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <span className="text-xl font-bold tracking-tighter hidden sm:block">
+                        {PORTFOLIO_DATA.personal.name}
+                    </span>
                 </Link>
 
                 {/* Desktop Nav */}
