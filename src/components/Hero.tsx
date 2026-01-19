@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const Hero = () => {
     return (
-        <section className="min-h-screen flex flex-col justify-center px-4 md:px-8 max-w-7xl mx-auto pt-24 pb-12">
+        <section className="min-h-screen flex flex-col justify-center px-4 md:px-8 max-w-7xl mx-auto pt-40 pb-12">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export const Hero = () => {
                     </div>
 
                     <h1 className="text-3xl md:text-7xl font-bold tracking-tight text-white">
-                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">{PORTFOLIO_DATA.personal.name}</span>
+                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">{PORTFOLIO_DATA.personal.name}</span>
                     </h1>
                     <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl px-2">
                         {PORTFOLIO_DATA.personal.role}
